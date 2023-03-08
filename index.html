@@ -155,19 +155,42 @@
 
             </div>
         </div>
+
+        <!-- Criamos um container com duas colunas usando o Bootstrap -->
+        <div class="container">
+          <div class="row">
+              <div class="col-sm-6">
+                  <!-- Aqui criamos outro card para ser o container onde a imagem arrastável será solta -->
+                  <div class="card" id="drop-container">
+                    <!-- Adicionamos a imagem de destino -->
+                    <img class="card-img-top" id="target-image" src="./images/dragdrop/Group 4.png">
+                  </div>
+              </div>
+              <div class="col-sm-3">
+                <!-- Aqui criamos um card para ser o container do nosso imagem arrastável -->
+                <div class="card" id="drag-container">
+                  <!-- Adicionamos a imagem arrastável -->
+                  <img class="card-img-top" id="draggable-image" src="./images/dragdrop/arrowup.png" draggable="true">
+                  <!-- Adicionamos a imagem arrastável -->
+                  <img class="card-img-bottom" id="draggable-img" src="./images/dragdrop/arrowdown.png" draggable="true">
+                </div>
+              </div>
+          </div>
+        </div>
+
+
     </section>
 
     <footer>
         <div class="container">
             <img src="./images/Vector 4.png" alt="">
             <copy& class="rodape">© Copyright 2022 | All Rights Reserved</copy>
-
         </div>
     </footer>
 
-
     <script src="./js/geolocation.js"></script>
     <script src="./js/notification.js"></script>
+    <script src="./js/dragdrop.js"></script>
     
 </body>
 </html>
